@@ -11,7 +11,7 @@ namespace Labb_2___Harry_Potter
             Name = "Hufflepuff";
             HouseGhost = "Den Tjocke Munkbrodern";
             Mascot = "Grävling";
-            Members = null; // Yytterligare en kommentar
+            Members = null; // Ytterligare en kommentar
 
         }
 
