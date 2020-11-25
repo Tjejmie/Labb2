@@ -12,7 +12,7 @@ namespace Labb_2___Harry_Potter
             HouseGhost = "Den Tjocke Munkbrodern";
             Mascot = "Grävling";
             Members = null;
-            Password = "en ensam trollkarl";
+            Password = "en ensam trollkarl"; // en kommentar
 
         }
 
