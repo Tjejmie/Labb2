@@ -24,6 +24,7 @@
         <Label x:Name="lblDistribute" Content="Fördela enligt" HorizontalAlignment="Left" Margin="487,173,0,0" VerticalAlignment="Top" Height="26" Width="83"/>
         <Button x:Name="btnClear" Content="Rensa" HorizontalAlignment="Left" Margin="499,307,0,0" VerticalAlignment="Top" Height="23" Width="60" Click="btnClear_Click"/>
         <Button x:Name="btnSave" Content="Spara lista" HorizontalAlignment="Left" Margin="499,335,0,0" VerticalAlignment="Top" Height="23" Width="60" Click="btnSave_Click"/>
+        <Button x:Name="btnSavedList" Content="Sparad lista" HorizontalAlignment="Left" Margin="578,307,0,0" VerticalAlignment="Top" Height="23" Width="60" Click="btnSavedList_Click"/>
 
     </Grid>
 </Window>

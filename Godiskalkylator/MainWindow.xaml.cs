@@ -83,5 +83,12 @@ namespace Godiskalkylator
             FileHandler.Save(candyCalculator, filename);
             candyCalculator = FileHandler.Open<CandyCalculator>(filename);
         }
+
+        private void btnSavedList_Click(object sender, RoutedEventArgs e)
+        {
+            string filename = "People.json";
+            CandyCalculator candyCalculator = FileHandler.Open<CandyCalculator>(filename);
+            lstBoxInfo.ItemsSource = candyCalculator.PeopleList;
+        }
     }
 }
