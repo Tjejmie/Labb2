@@ -8,28 +8,28 @@ namespace Godiskalkylator
     public class CandyCalculator
     {
         public List<Person> PeopleList { get; set; }
-
+        
         public CandyCalculator()
         {
             PeopleList = new List<Person>();
         }
 
-        public void DistributeCandy(int candies, bool byLastName, bool byFirstName, bool byAge)
+        public void SortingCandy(int candies, bool byLastName, bool byFirstName, bool byAge)
         {
             int candy = candies / PeopleList.Count;
             int leftoverCandy = candies % PeopleList.Count;
 
             if (byFirstName)
             {
-                DistributeCandyFirstName();
+                SortingCandyFirstName();
             }
             else if (byLastName)
             {
-                DistributeCandyLastName();
+                SortingCandyLastName();
             }
             else if (byAge)
             {
-                DistributeCandyAge();
+                SortingCandyAge();
             }
             foreach (var person in PeopleList)
             {
@@ -41,21 +41,21 @@ namespace Godiskalkylator
                 }
             }
         }
-        public List<Person> DistributeCandyFirstName()
+        public List<Person> SortingCandyFirstName()
         {
             {
                 PeopleList = PeopleList.OrderBy(person => person.FirstName).ToList();
             }
             return PeopleList;
         }
-        public List<Person> DistributeCandyLastName()
+        public List<Person> SortingCandyLastName()
         {
             {
                 PeopleList = PeopleList.OrderBy(person => person.LastName).ToList();
             }
             return PeopleList;
         }
-        public List<Person> DistributeCandyAge()
+        public List<Person> SortingCandyAge()
         {
             {
                 PeopleList = PeopleList.OrderBy(person => person.Age).ToList();

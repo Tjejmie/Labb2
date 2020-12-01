@@ -29,9 +29,9 @@ namespace Godiskalkylator
         
         Person person;
         CandyCalculator candyCalculator;
-        List<Person> listPeople= new List<Person>();
+        //List<Person> listPeople= new List<Person>();
 
-        private void updateUi()
+        private void updateUI()
         {
             lstBoxInfo.ItemsSource = null;
             lstBoxInfo.ItemsSource = candyCalculator.PeopleList;
@@ -45,14 +45,14 @@ namespace Godiskalkylator
                 person.Age = int.Parse(txtBoxAge.Text);
             }
             candyCalculator.PeopleList.Add(person);
-            lstBoxInfo.ItemsSource = listPeople;
-            updateUi();
+            //lstBoxInfo.ItemsSource = listPeople;
+            updateUI();
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             AddPerson();
-            updateUi();
+            updateUI();
         }
 
         private void btnDistribute_Click(object sender, RoutedEventArgs e)
@@ -62,7 +62,7 @@ namespace Godiskalkylator
             bool byLastName = rbtnLastName.IsChecked.Value;
             bool byAge = rbtnAge.IsChecked.Value;
 
-            candyCalculator.DistributeCandy(candies, byFirstName, byLastName, byAge);
+            candyCalculator.SortingCandy(candies, byFirstName, byLastName, byAge);
             lstBoxInfo.ItemsSource = candyCalculator.PeopleList;
         }
 
