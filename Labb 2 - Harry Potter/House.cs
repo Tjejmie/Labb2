@@ -7,7 +7,6 @@ namespace Labb_2___Harry_Potter
     public abstract class House
     {
         
-        public string Name { get; set; }
         public string HouseGhost { get; set; }
         public string Mascot { get; set; }
         public string Password { get; set; }
@@ -74,7 +73,6 @@ namespace Labb_2___Harry_Potter
                 return true;
             }
             return false;
-
         }
 }  
 

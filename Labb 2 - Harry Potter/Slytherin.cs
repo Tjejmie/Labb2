@@ -8,7 +8,7 @@ namespace Labb_2___Harry_Potter
     {
         public Slytherin ()
         {
-            Name = "Slytherin";
+            
             HouseGhost = "Blodige Baronen";
             Mascot = "Orm";
             Members = null;

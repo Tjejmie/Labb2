@@ -8,11 +8,11 @@ namespace Labb_2___Harry_Potter
     {
         public Hufflepuff()
         {
-            Name = "Hufflepuff";
+            
             HouseGhost = "Den Tjocke Munkbrodern";
             Mascot = "Grävling";
-            Members = null; // Ytterligare en kommentar
-
+            Members = null;
+            Password = "en ensam trollkarl";
         }
 
     }

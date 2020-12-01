@@ -8,7 +8,7 @@ namespace Labb_2___Harry_Potter
     {
         public Gryffindor()
         {
-            Name = "Gryffindor";
+            
             HouseGhost = "Nästan Huvudlöse Nick";
             Mascot = "Lejon";
             Members = null;

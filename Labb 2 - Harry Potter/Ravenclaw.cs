@@ -8,7 +8,7 @@ namespace Labb_2___Harry_Potter
     {
         public Ravenclaw()
         {
-            Name = "Ravenclaw";
+            
             HouseGhost = "Grå Damen";
             Mascot = "Örn";
             Members = null;

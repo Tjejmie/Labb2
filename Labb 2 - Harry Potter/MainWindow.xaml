@@ -6,8 +6,5 @@
         xmlns:local="clr-namespace:Labb_2___Harry_Potter"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="252,135,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-
-    </Grid>
+    <Grid/>
 </Window>

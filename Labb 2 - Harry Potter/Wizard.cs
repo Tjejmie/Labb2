@@ -8,7 +8,7 @@ namespace Labb_2___Harry_Potter
     {
         
         
-        List<Wizard> Members = new List<Wizard>();
+        
         public string BloodStatus { get; set; }
         public bool DeathEater { get; set; }
         public bool DumbledoresArmy { get; set; }
