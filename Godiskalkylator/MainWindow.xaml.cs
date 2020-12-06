@@ -29,7 +29,6 @@ namespace Godiskalkylator
         
         Person person;
         CandyCalculator candyCalculator;
-        //List<Person> listPeople= new List<Person>();
 
         private void updateUI()
         {
@@ -45,7 +44,7 @@ namespace Godiskalkylator
                 person.Age = int.Parse(txtBoxAge.Text);
             }
             candyCalculator.PeopleList.Add(person);
-            //lstBoxInfo.ItemsSource = listPeople;
+            
             updateUI();
         }
 

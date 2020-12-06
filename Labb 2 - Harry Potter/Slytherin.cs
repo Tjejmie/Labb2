@@ -6,16 +6,18 @@ namespace Labb_2___Harry_Potter
 {
     public class Slytherin : House
     {
+        public override string ToString()
+        {
+            return this.GetType().Name;
+        }
         public Slytherin ()
         {
-            
             HouseGhost = "Blodige Baronen";
             Mascot = "Orm";
-            Members = null;
+            Members = new List<Wizard>();
             Password = "trollkarlsmakt";
         }
-
-
+       
         public override bool PasswordCounter(string password)
         {
             int count = 0;

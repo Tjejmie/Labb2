@@ -6,14 +6,18 @@ namespace Labb_2___Harry_Potter
 {
     public class Hufflepuff : House
     {
-        public Hufflepuff()
+        public override string ToString()
         {
-            
-            HouseGhost = "Den Tjocke Munkbrodern";
-            Mascot = "Grävling";
-            Members = null;
-            Password = "en ensam trollkarl";
+            return this.GetType().Name;
         }
 
+        public Hufflepuff()
+        {
+            HouseGhost = "Den Tjocke Munkbrodern";
+            Mascot = "Grävling";
+            Members = new List<Wizard>();
+            Password = "en ensam trollkarl";
+        }
+        
     }
 }

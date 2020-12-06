@@ -6,13 +6,12 @@ namespace Labb_2___Harry_Potter
 {
     public abstract class House
     {
-        
         public string HouseGhost { get; set; }
         public string Mascot { get; set; }
         public string Password { get; set; }
         public List<Wizard> Members { get; set; }
 
-       
+
         public virtual bool PasswordCounter(string password)
         {
             int count = 0;
@@ -71,11 +70,13 @@ namespace Labb_2___Harry_Potter
             {
                 Password = newPassword;
                 return true;
+
             }
             return false;
         }
-}  
+
 
     }
    
+} 
 

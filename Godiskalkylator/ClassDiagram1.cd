@@ -10,12 +10,12 @@
   <Class Name="Godiskalkylator.CandyCalculator" Collapsed="true">
     <Position X="6.75" Y="2" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAEAAAAAAAAAAEAAAAAAAAAAAAAAAAQAAAQAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAACAAASAAAAAAgAAAA=</HashCode>
       <FileName>CandyCalculator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Godiskalkylator.FileHandler" Collapsed="true">
-    <Position X="6" Y="1" Width="1.5" />
+    <Position X="5.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FileHandler.cs</FileName>
