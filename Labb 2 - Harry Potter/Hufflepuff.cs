@@ -15,7 +15,7 @@ namespace Labb_2___Harry_Potter
         {
             HouseGhost = "Den Tjocke Munkbrodern";
             Mascot = "Grävling";
-            Members = new List<Wizard>();
+            
             Password = "en ensam trollkarl";
         }
         

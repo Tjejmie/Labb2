@@ -55,7 +55,7 @@ namespace Labb_2___Harry_Potter
 
             if (BloodStatus == "Halvblod")
             {
-                if (odds >= 0 && odds < 25)
+                if (odds >= 1 && odds < 25)
                 {
                     return true;
                 }
@@ -66,7 +66,7 @@ namespace Labb_2___Harry_Potter
             }
             else if (BloodStatus == "Mugglarfödd")
             {
-                if (odds >= 0 && odds < 15)
+                if (odds >= 1 && odds < 15)
                 {
                     return true;
                 }
@@ -77,7 +77,7 @@ namespace Labb_2___Harry_Potter
             }
             else if (BloodStatus == "Fullblod")
             {
-                if (odds >= 0 && odds < 60)
+                if (odds >= 1 && odds < 60)
                 {
                     return true;
                 }
@@ -88,7 +88,7 @@ namespace Labb_2___Harry_Potter
             }
             else if (BloodStatus == "Okänd")
             {
-                if (odds >= 0 && odds < 25)
+                if (odds >= 1 && odds < 25)
                 {
                     return  true;
                 }

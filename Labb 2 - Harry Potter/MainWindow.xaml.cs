@@ -21,7 +21,6 @@ namespace Labb_2___Harry_Potter
     public partial class MainWindow : Window
     {
 
-
         Wizard wizard;
         Gryffindor gryffindor;
         Hufflepuff hufflepuff;
@@ -32,7 +31,7 @@ namespace Labb_2___Harry_Potter
         public MainWindow()
         {
             InitializeComponent();
-            wizard = new Wizard();
+            
             gryffindor = new Gryffindor();
             hufflepuff = new Hufflepuff();
             ravenclaw = new Ravenclaw();
@@ -57,25 +56,21 @@ namespace Labb_2___Harry_Potter
 
             if (cboHouses.SelectedItem == hogwarts.Gryffindor && txtOldPassword.Text == hogwarts.Gryffindor.Password && hogwarts.Gryffindor.PasswordFormat(txtNewPassword.Text) == true)
             {
-                hogwarts.Gryffindor.Password = txtNewPassword.Text;
                 MessageBox.Show($"Ditt lösenord är ändrat till: {txtNewPassword.Text}");
             }
 
             else if (cboHouses.SelectedItem == hogwarts.Hufflepuff && txtOldPassword.Text == hogwarts.Hufflepuff.Password && hogwarts.Hufflepuff.PasswordFormat(txtNewPassword.Text) == true)
             {
-                hogwarts.Hufflepuff.Password = txtNewPassword.Text;
                 MessageBox.Show($"Ditt lösenord är ändrat till: {txtNewPassword.Text}");
             }
 
             else if (cboHouses.SelectedItem == hogwarts.Ravenclaw && txtOldPassword.Text == hogwarts.Ravenclaw.Password && hogwarts.Ravenclaw.PasswordFormat(txtNewPassword.Text) == true)
             {
-                hogwarts.Ravenclaw.Password = txtNewPassword.Text;
                 MessageBox.Show($"Ditt lösenord är ändrat till: {txtNewPassword.Text}");
             }
 
             else if (cboHouses.SelectedItem == hogwarts.Slytherin && txtOldPassword.Text == hogwarts.Slytherin.Password && hogwarts.Slytherin.PasswordFormat(txtNewPassword.Text) == true)
             {
-                hogwarts.Slytherin.Password = txtNewPassword.Text;
                 MessageBox.Show($"Ditt lösenord är ändrat till: {txtNewPassword.Text}");
             }
 
@@ -89,25 +84,9 @@ namespace Labb_2___Harry_Potter
         {
 
             txtName.Text = wizard.NameWizard;
-            
-            if (wizard.DeathEater == true)
-            {
-                chkDeatheater.IsChecked = true;
-            }
 
-            else
-            {
-                chkDeatheater.IsChecked = false;
-            }
-
-            if (wizard.DumbledoresArmy == true)
-            {
-                chkArmy.IsChecked = true;
-            }
-            else
-            {
-                chkArmy.IsChecked = false;
-            }
+            chkArmy.IsChecked = wizard.DumbledoresArmy;
+            chkDeatheater.IsChecked = wizard.DeathEater;
         }
 
         private void btnSortingHat_Click(object sender, RoutedEventArgs e)
@@ -130,24 +109,8 @@ namespace Labb_2___Harry_Potter
 
             MessageBox.Show($"{wizard.NameWizard} är numera medlem nummer {house.Members.Count} i {house}. Spöket {house.HouseGhost} kommer ta väl hand om dig.");
 
-            if (wizard.DeathEater == true)
-            {
-                chkDeatheater.IsChecked = true;
-            }
-
-            else
-            {
-                chkDeatheater.IsChecked = false;
-            }
-
-            if (wizard.DumbledoresArmy == true)
-            {
-                chkArmy.IsChecked = true;
-            }
-            else
-            {
-                chkArmy.IsChecked = false;
-            }
+            chkArmy.IsChecked = wizard.DumbledoresArmy;
+            chkDeatheater.IsChecked = wizard.DeathEater; 
         }
 
 

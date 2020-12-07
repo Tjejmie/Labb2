@@ -6,10 +6,16 @@ namespace Labb_2___Harry_Potter
 {
     public abstract class House
     {
-        public string HouseGhost { get; set; }
+        public string HouseGhost { get; set; }   //get; set; eftersom det kapslar in. Man skapar en property direkt i HouseGhost. 
         public string Mascot { get; set; }
         public string Password { get; set; }
-        public List<Wizard> Members { get; set; }
+        public List<Wizard> Members { get; set; }  //enbart en variabel, måste nya upp för att få ett objekt att fungera det gör oss elevhemmen
+
+        public House()
+        {
+            Members = new List<Wizard>(); // Gör List till ett objekt i konstruktor
+        }
+
 
 
         public virtual bool PasswordCounter(string password)

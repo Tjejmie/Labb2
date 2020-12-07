@@ -15,7 +15,7 @@ namespace Labb_2___Harry_Potter
         {
             HouseGhost = "Nästan Huvudlöse Nick";
             Mascot = "Lejon";
-            Members = new List<Wizard>();
+            
             Password = "en ensam trollkarl";
         }
         

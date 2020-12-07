@@ -45,12 +45,18 @@
       <FileName>Gryffindor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Labb_2___Harry_Potter.Hogwarts" Collapsed="true">
+  <Class Name="Labb_2___Harry_Potter.Hogwarts">
     <Position X="7.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAQAAAAQABBgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Hogwarts.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Gryffindor" />
+      <Property Name="Hufflepuff" />
+      <Property Name="Ravenclaw" />
+      <Property Name="Slytherin" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
